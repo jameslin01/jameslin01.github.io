@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav><div class="nav-logo" id ="navLogo">
+            <a href="index"><img src="images/logo.png"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="mystory">My Story</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <!-------- Main--------->
+        <section class="home" id="home">
+
+            <div class="home-text container">
+                <h2 class="home-title">Blog</h2>
+                <span class="home-subtitle">Recent posts</span>
+            </div>
+        </section>
+            
+            <!---
+            <div class="blog-container">
+                <div class="blog-box">
+                    <div class="blog-img">
+                <img src="images/sfam.jpg" alt="b1" >
+                </div>  
+                -->
+                <!-- Post Filter
+                <div class="post-filter container">
+                    <span class="filter-item active-filter" data-filter='all'>All</span>
+
+
+
+
+                </div>
+                -->
+
+                            
+                <!-- Posts -->
+
+                <section class="post container">
+
+                    <div class="post-box">
+                        <img src="images/sfam.jpg" alt="" class="post-img">
+                        <a href="posts/Notes-I-have-taken-during-first-year" class="post-title">
+                            Notes I have taken during first year
+                        </a>
+                        <span class="post-date">19 March 2023</span>
+                        <p class="post-descripti">Notes I haven taken during my first year of university </p>
+                    </div>
+
+
+
+                </section>
+
+                <!----
+                <div class="blog-text">
+                    <span> 19 March 2023 / Studying for a Maths degree</span>
+                    <a href="posts/Notes-I-have-taken-during-first-year" class="blog-title">Notes I have taken during my first year of university.</a>
+                    <p>Understanding- Go through lecture notes and understand them.
+                        Active Recall
+                        - This is the process of remembering things and bringing it forward to your mind. It is known to an effective way of remembering information.
+                         Spaced Repetition
+                     <span id = "dots">...</span>
+                     <div class ="blog-more">
+                     <span id = "more"> - Efficient way of keeping information in your mind. Space out the recalling of that information over time. Spend less time studying and retain better.
+                        - Interrupt the forgetting curve by revisting learnt materials.</span>
+                    </p></div>
+                    -->
+                    <!------
+                    <button onclick="myFunction()" id = "myBtn">Read more</button>
+                    
+                </div>
+                
+            </div>
+            ---->
+
+        </section>
+
+
+
+
+
+
+<!-------  JavaScript for Toggle Menu ------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+<!------ JavaScript for Read more button
+<script>
+    
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+
+    }
+
+</script>
+--->
+
+    <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+     <!-- Link to JS-->
+     <script src="main.js"></script>
+<!------------ Footer ----------->
+
+
+
+
+
+<section class="footer">
+    <p>&#169; James Lin All Rights Reserved</p>
+    <div class="social">
+        <a href="" class=""><i class="fa-brands fa-youtube"></i></a>
+        <a href="" class=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href="" class=""><i class="fa-brands fa-instagram"></i></a>
+        <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" class=""><i class="fa-brands fa-github"></i></a>
+        
+    </div>
+</section>
+</body>
+</html>
