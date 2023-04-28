@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav><div class="nav-logo" id ="navLogo">
+            <a href="index"><img src="../images/logo.png"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="../index">Home</a></li>
+                    <li><a href="../mystory">My Story</a></li>
+                    <li><a href="../blog">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    <!---Post Content -->
+    <section class="post-header">
+        <div class="header-content post-container">
+            <!-- Back -->
+            <a href="index" class="back-ho">Back To Home</a>
+            <!-- Title -->
+            <h1 class="header-title">Notes I have taken during first year</h1>
+            <!-- Post Image -->
+            <img src="../images/sfam.jpg" alt="" class="header-img">
+
+        </div>
+
+    </section>
+
+    <!-- Posts -->
+
+    <section class="post-content post-container">
+        <h2 class="sub-heading">Notes I have taken during first year</h2>
+
+        <h1 class="sub-heading">Understanding</h1>
+        <p class="post-text">Go through lecture notes and understand them</p>
+
+        <h1 class="sub-heading">Active Recall</h1>
+        <p class="post-text">This is the process of remembering things and bringing it forward to your mind. It is known to an effective way of remembering information.</p>
+
+        <h1 class="sub-heading">Spaced Repetition</h1>
+        <p class="post-text">- Efficient way of keeping information in your mind. Space out the recalling of that information over time. Spend less time studying and retain better.
+            - Interrupt the forgetting curve by revisting learnt materials.</p>
+
+        <h2 class="sub-heading">2 Modes: Focus-Mode thinking vs Diffuse-mode thinking</h2>
+        <p class="post-text">
+            - Focus-mode when you are actively engaged in ideas.
+            - Diffuse-mode when you are sub-conciously thinking about the ideas.</p>
+
+        <h2 class="sub-heading">Flashcards</h2>    
+        <p class="post-text">- Only make flashcards of what you **understand**. Create flashcards for **important** **content**: theorems, proofs, remarks, lemmas, corollary .etc.
+            - **Review** flashcards regularly.
+            - **Understand** the ideas ****before you make the flash cards.</p>
+
+        <h2 class="sub-heading">Sleep/Fitness</h2>
+        <p class="post-text">- Good sleep leads to good memory retention.
+            - Fitness helps with physical and mental wellbeing.</p> 
+
+        <h2 class="sub-heading">Definition</h2>
+        <p class="post-text">A definition in mathematics is a precise statement delineating and naming a concept by relating it to previously defined concepts or such undefined concepts as "number" or "set".</p>
+
+        <h2 class="sub-heading">Theorem</h2>
+        <p class="post-text">Theorems are the relationship between concepts and general problems which can be proved. They are important results which show how to make concepts solve problems or give major insights into the workings of the subject. They often have involved and deep proofs.</p>
+
+        <h2 class="sub-heading">Proposition</h2>
+        <p class="post-text">Propositions give smaller results often relating different definitions to each other or give an alternative forms of the definition. Proofs of propositions are often less complex than the proofs of theorems.</p>
+        
+        <h2 class="sub-heading">Lemma</h2>
+        <p class="post-text">Lemmas are technical results used in the proofs of theorems which makes the proofs for theorem shorter. </p>
+
+        <h2 class="sub-heading">Corollary</h2>
+        <p class="post-text">Corollaries are immediately followed by theorems by either giving special cases or highlighting the interest or importance of the theorem.</p>
+
+        <h2 class="sub-heading">How to solve difficult math problems?</h2>
+        <p class="post-text">- Look up whatever you don't know/not sure about such as notations,  symbols, words etc. Don't start the questions unless you understand they are asking/mean.
+            - Look over your notes for ideas to be applied to the questions.
+            - Use examples, apply the question to simple examples.
+            - Simplify the questions.
+            - Make sure you're focused whilst doing the problems and when you take a break you can go into diffuse-mode.
+            - **Einstellung effect** - this refers to prexisting knowledge impedes one's ability to reach an optimal solution. We become unable to consider other solutions when we think we already have one. This is why it is important to take light breaks.</p>
+        
+        <h2 class="sub-heading">Ryan's advice</h2>
+        <p class="post-text">Ryan’s advice
+
+            Understand everything, lecture notes, do questions provided. Do past papers and understand what you don’t understand.</p>
+
+    </section>
+
+    <!--- Share -->
+    <div class="share post-container">
+        <span class="share-title">Share this article</span>
+        <div class="social">
+            <a href="" class=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+
+
+<!-------  JavaScript for Toggle Menu ------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
+
+<!------ JavaScript for Read more button
+<script>
+    
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+
+    }
+
+</script>
+--->
+<!------------ Footer ----------->
+<section class="footer">
+    <p>Copyright © 2023 James Lin</p>
+    <div class="social">
+        <a href="" class=""><i class="fa-brands fa-youtube"></i></a>
+        <a href="" class=""><i class="fa-brands fa-tiktok"></i></a>
+        <a href="" class=""><i class="fa-brands fa-instagram"></i></a>
+        <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" class=""><i class="fa-brands fa-github"></i></a>
+    </div>
+</section>
+</body>
+</html>
