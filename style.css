@@ -80,6 +80,7 @@ section {
 
 .home-content {
     max-width: 60rem;
+
 }
 
 .home-content h1 {
@@ -93,6 +94,16 @@ section {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
+}
+
+.home .avatar img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 25%;
+    object-position: 100;
+    
+    
 }
 
 .home-content p {
@@ -119,8 +130,13 @@ section {
     border: .2rem solid var(--main-color);
     border-radius: 25%;
     font-size: 20px;
+    color: var(--main-color);
     z-index: 1;
     overflow: hidden;
+}
+
+.home-sci a:hover {
+    color: var(--main-color);
 }
 
 .home-sci a::before {
@@ -128,8 +144,13 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
-    background: red;
+    background: var(--main-color);
     z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
 }
