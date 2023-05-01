@@ -428,12 +428,11 @@ span {
 
     .home-content h1 {
         display: flex;
-        flex-direction: column;
     }
 
-    .home-sci {
-        width: 160px;
-    }
+    /* .home-sci {
+        width: 100px;
+    } */
 
     .home-sci a {
         width: 38px;
