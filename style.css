@@ -576,7 +576,7 @@ span {
 #project .item .right {
 	margin-left: -150px;
 	flex: 1;
-	background-color: var(--body-bg);
+	background-color: rgba(1, 161, 247, .2);
 	padding: 5rem 3rem;
 	border-radius: 12px;
 	box-shadow: 0px 0px 20px #00000028;
@@ -592,7 +592,7 @@ span {
     height: 500px;
 	overflow: hidden;
 	border-radius: 12px;
-	box-shadow: 0px 0px 20px #4705fc33;
+	/* box-shadow: 0px 0px 20px #4705fc33; */
 	position: relative;
 
 }
@@ -606,7 +606,7 @@ span {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: #5a24ed38;
+	/* background-color: #5a24ed38; */
 }
 #project .item .left .img img {
 	object-fit: fill;
@@ -617,16 +617,20 @@ span {
 	z-index: 1;
 }
 #project .item .right .project-title {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-family: 'Montserrat';
 	margin-bottom: 1rem;
+    color: var(--text-color);
 }
 #project .item .right .project-sub-title {
-	font-size: 1.6rem;
+	font-size: 2rem;
 	margin-bottom: 2rem;
+    color: var(--main-color);
 }
 #project .item .right .project-desc {
-	color: var(--secondary-gray);
+    font-size: 1.5rem;
+    font-weight: 250px;
+	color: #000;
 	margin-bottom: 3rem;
 }
 #project .item .right .external-link {
