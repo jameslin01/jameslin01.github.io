@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Lin</title>
     <!-- =============== UNICONS ================== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
@@ -31,7 +31,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <!-- <a href="#blog">Blog</a> -->
-            <a href="#projects">Projects</a>
+            <a href="#project">Projects</a>
 
             <span class="active-nav"></span>
         </nav>
@@ -80,7 +80,90 @@
     </section>
 
     <!-- projects section design -->
-    <section class="project" id="project">
+    <section id="project">
+        <div class="container"></div>
+            <h2 class="section-heading"
+            data-outline="Projects">Projects</h2>
+            <div class="all-items">
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="images/sfam.jpg" alt="project" >
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Lorem ipsum dolor sit.
+                        </h2>
+                        <h3 class="project-sub-title">Lorem ipsum dolor sit.                            
+                        </h3>
+                        <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Officiis, sit velit similique dolorum modi voluptas accusamus doloremque voluptatum
+                              numquam veniam est minima fugit dolores,
+                             laudantium, facilis perferendis! Id, eius sapiente.</p>
+                             <div class="buttons">
+                                <a href="#" class="primary-btn">More</a>
+                                <a href="#" class="primary-btn
+                                outline"><span>Preview</span>
+                                <box-icon name='link-external'></box-icon>
+                            </a>
+
+                             </div>
+                    </div>
+                </div>
+            <div class="all-items">
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="images/sfam.jpg" alt="project" >
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Lorem ipsum dolor sit.
+                        </h2>
+                        <h3 class="project-sub-title">Lorem ipsum dolor sit.                            
+                        </h3>
+                        <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Officiis, sit velit similique dolorum modi voluptas accusamus doloremque voluptatum
+                              numquam veniam est minima fugit dolores,
+                             laudantium, facilis perferendis! Id, eius sapiente.</p>
+                             <div class="buttons">
+                                <a href="#" class="primary-btn">More</a>
+                                <a href="#" class="primary-btn
+                                outline"><span>Preview</span>
+                                <box-icon name='link-external'></box-icon>
+                            </a>
+
+                             </div>
+                    </div>
+                </div>
+            <div class="all-items">
+                <div class="item">
+                    <div class="left">
+                        <div class="img">
+                            <img src="images/sfam.jpg" alt="project" >
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h2 class="project-title">Lorem ipsum dolor sit.
+                        </h2>
+                        <h3 class="project-sub-title">Lorem ipsum dolor sit.                            
+                        </h3>
+                        <p class="project-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                             Officiis, sit velit similique dolorum modi voluptas accusamus doloremque voluptatum
+                              numquam veniam est minima fugit dolores,
+                             laudantium, facilis perferendis! Id, eius sapiente.</p>
+                             <div class="buttons">
+                                <a href="#" class="primary-btn">More</a>
+                                <a href="#" class="primary-btn
+                                outline"><span>Preview</span>
+                                <box-icon name='link-external'></box-icon>
+                            </a>
+
+                             </div>
+                    </div>
+                </div>
+            </div>
+            </h2>
         <!-- heading -->
         <div class="project-heading">
             <span>Here are some of my work</span>
@@ -89,13 +172,10 @@
 
         <!-- filter -->
         <ul class="project-filter">
-            <li class="list">All</li>
-            <li class="list">Application</li>
-            <li class="list">All</li>
-            <li class="list">All</li>
-            <li class="list">All</li>
-
-
+            <li class="list project-filter-active">All</li>
+            <li class="list">Python</li>
+            <li class="list">Data Analysis</li>
+            <li class="list">Solidity</li>
 
         </ul>
 
@@ -104,6 +184,18 @@
         <h3 class="nftab">Netflix Tableau Dashboard</h3>
         <h3 class="citibikes">NY Citi Bikes</h3>
     </section>
+
+
+    <!-- Using JQuery -->
+    <script src="js/JQuery.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).on('click','.project-filter li',function(){
+            $(this).addClass('project-filter-active').siblings().removeClass('project-filter-active')
+        });
+
+    </script>
 
 <!------------ Footer ----------->
 <footer class="footer">
